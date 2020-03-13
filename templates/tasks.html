@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    {% for tasks in tasks %}
+    {% for task in tasks %}
         {{task.task_name}}
         {{task.category_name}}
-        {{task_description}}
-        {{is_urgent}}
+        {{task.task_description}}
+        {{task.is_urgent}}
         {{task.due_date}}
     {% endfor %}
 </body>
